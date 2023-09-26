@@ -1,2 +1,1 @@
-# Kodluyoruz-FrontEnd Atölyesi ödevleri için repositories 
-# Kodluyoruz-FrontEnd
+# Kodluyoruz-FrontEnd Atölyesi ödevleri için repositories
