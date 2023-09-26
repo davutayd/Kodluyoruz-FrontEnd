@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box; /* bir etiketin toplam genişliğine ve yüksekliğine padding ve border'ı dahil etmemizi sağlar*/
+  font-family: "Montsrrat", sans-serif;
+}
+
+body {
+  background-image: url(img/sl_030720_28740_09.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  justify-content: center; /* Flex özelliğine sahip kapsayıcının yatay eksende nasıl hizalanacağını ayarlar */
+  align-items: center;
+  height: 100vh;
+  margin: -20px 0;
+  width: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+a {
+  color: #0e263d;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px; /* harfler arası mesafe*/
+  margin: 20px 0 30px;
+}
+.container {
+  background: #fff;
+  border-radius: 90px;
+  box-shadow: 30px 14px 28px rgba(0, 0, 5, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2); /* gölgelendirme*/
+  position: relative; /*elemanın en yakın pozisyon değeri relative olan elemana göre kendini konumlandırır*/
+  overflow: hidden; /* taşan kısımları kırpar */
+  opacity: 85%;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+.form-container {
+  position: absolute;
+  height: 100%;
+}
+.sign-in {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column; /* satırların kolon halinde sıralanmasını sağlar */
+  padding: 0 50px;
+  height: 100%;
+}
+
+.sign-in input:hover {
+  transform: scale(101%);
+}
+
+.inputDiv {
+  background: #eee;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.inputDiv input {
+  outline: none; /*sınırları kaldırır */
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+}
+
+button {
+  border-radius: 50px;
+  box-shadow: 0 1px 1px;
+  border: 1px solid #008ecf;
+  background: #008ecf;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* bütün harfleri büyük harfde çevirir*/
+  cursor: pointer;
+  margin-top: 10px;
+}
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.overlay {
+  background: linear-gradient(to right, #008ecf, #008ecf) no-repeat 0 0 / cover;
+  color: #fff;
+  left: -100%;
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+button.ghost {
+  background: transparent;
+  border-color: #fff;
+}
+
+button:active {
+  transform: scale(0.95);
+}

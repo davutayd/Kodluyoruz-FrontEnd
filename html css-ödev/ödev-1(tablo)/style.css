@@ -1,0 +1,11 @@
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-family: Verdana, sans-serif;
+  font-size: 8px;
+}
+th {
+  width: 10%;
+}
